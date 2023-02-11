@@ -1,0 +1,828 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+  <meta  name="description" content="행복을 전하는 프리미엄 아이스크림, 배스킨라빈스 공식 홈페이지 입니다.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="[배스킨라빈스]">
+  <meta property="og:url" content="http://duddltn.dothome.co.kr/baskin">
+  <meta property="og:image" content="http://duddltn.dothome.co.kr/baskin/images/img_br_sns.png">
+  <meta property="og:description" content="행복을 전하는 프리미엄 아이스크림, 배스킨라빈스 공식 홈페이지 입니다.">
+  <title>배스킨라빈스</title>
+  <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+  <link rel="apple-touch-icon" href="images/logo.png">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@700;800;900;1000&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+  <link rel="stylesheet" href="css/jquery-ui.min.css">
+  <link rel="stylesheet" href="css/swiper.min.css">
+  <link rel="stylesheet" href="css/common.css?v=<?php echo time(); ?>">
+  <link rel="stylesheet" href="css/layout.css?v=<?php echo time(); ?>">
+  <script src="js/jquery-3.6.1.min.js"></script>
+  <script src="js/jquery-ui.min.js"></script>
+  <script src="js/swiper.min.js"></script>
+  <script src="js/ui_common.js?v=<?php echo time(); ?>"></script>
+</head>
+<body>
+  <div id="skip_navi">
+    <a href="#container">본문바로가기</a>
+  </div>
+  <div id="wrap">
+    <header id="header">
+      <h1 class="logo">
+        <a href="index.html"><img src="images/logo.png" alt="배스킨라빈스"></a>
+      </h1>
+      <button class="btn_open">전체메뉴 열기</button>
+      <div class="dimmed"></div>
+      <div class="gnb_area">
+        <div class="util_wrap">
+          <ul class="util">
+            <li><a href="login.html">LOGIN</a></li>
+            <li><a href="#">JOIN</a></li>
+          </ul>
+          <button class="btn_search" type="button">SEARCH<i class="xi-search"></i></button>
+        </div>
+        <nav class="gnb_wrap">
+          <ul class="gnb">
+            <li>
+              <a href="#">FLAVOR OF THE MONTH</a>
+            </li>
+            <li>
+              <a href="#">MENU</a>
+              <ul class="depth02">
+                <li><a href="menu.html">아이스크림</a></li>
+                <li><a href="#">아이스크림케이크</a></li>
+                <li><a href="#">음료</a></li>
+                <li><a href="#">커피</a></li>
+                <li><a href="#">디저트</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">EVENT</a>
+              <ul class="depth02">
+                <li><a href="event.html">이벤트</a></li>
+                <li><a href="#">당첨자발표</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">STORE</a>
+              <ul class="depth02">
+                <li><a href="#">매장찾기</a></li>
+                <li><a href="#">고객센터</a></li>
+                <li><a href="#">단체주문</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">ABOUT</a>
+              <ul class="depth02 ">
+                <li><a href="notice.html">공지사항</a></li>
+                <li><a href="#">보도자료</a></li>
+                <li><a href="#">채용정보</a></li>
+                <li><a href="#">점포개설문의</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+        <div class="sns_wrap">
+          <div class="sns">
+            <a href="https://m.facebook.com/baskinrobbinskr/" target="_blank"><img src="images/sns_facebook.png" alt="페이스북"></a>
+            <a href="https://blog.naver.com/brgirl31" target="_blank"><img src="images/sns_blog.png" alt="네이버블로그"></a>
+            <a href="https://mobile.twitter.com/BaskinrobbinsKR" target="_blank"><img src="images/sns_twitter.png" alt="트위터"></a>
+            <div class="double">
+              <a href="https://www.instagram.com/baskinrobbinskorea/" target="_blank"><img src="images/sns_instagram.png" alt="인스타그램"></a>
+              <a href="https://www.youtube.com/user/baskinrobbinskorea" target="_blank"><img src="images/sns_youtube.png" alt="유투브"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="btn_close" type="button">
+        <img src="images/btn_pop_close.png" alt="전체메뉴 닫기">
+      </button>
+      <div class="search_modal_wrap" tabindex="0">
+        <form>
+          <fieldset>
+            <legend>통합검색</legend>
+            <div class="search_modal">
+              <div class="modal_top">
+                <h2>Search<i class="xi-search"></i></h2>
+              </div>
+              <div class="search_wrap">
+                <div class="search_name">
+                  <h3>제품명</h3>
+                  <div class="select_wrap">
+                    <select title="메뉴선택">
+                      <option value="">전체</option>
+                      <option value="A">아이스크림</option>
+                      <option value="B">아이스크림케이크</option>
+                      <option value="C">음료</option>
+                      <option value="D">커피</option>
+                      <option value="E">디저트</option>
+                      <option value="F">block pack</option>
+                      <option value="G">ready pack</option>
+                    </select>
+                  </div>
+                  <input type="text" title="제품명검색" placeholder="제품명을 입력하세요">
+                </div>
+                <div class="search_hashtag">
+                  <h3>해시태그</h3>
+                  <dl>
+                    <dt>자주 찾는 해시태그</dt>
+                    <dd>
+                      <a href="#">#엄마는 외계인</a>
+                      <a href="#">#사랑에 빠진 딸기</a>
+                      <a href="#">#아몬드 봉봉</a>
+                      <a href="#">#초콜릿 무스</a>
+                      <a href="#">#마법사의 할로윈</a>
+                    </dd>
+                  </dl>
+                  <div class="input_wrap">
+                    <input type="text" title="해시태그검색" placeholder="해시태그를 입력하세요">
+                  </div>
+                </div>
+                <div class="check_allergy">
+                  <h3>알레르기</h3>
+                  <div class="allergy">
+                    <div class="check_wrap">
+                      <input id="allergy01" type="checkbox">
+                      <label for="allergy01">계란</label>
+                    </div>
+                    <div class="check_wrap">
+                      <input id="allergy02" type="checkbox">
+                      <label for="allergy02">대두</label>
+                    </div>
+                    <div class="check_wrap">
+                      <input id="allergy03" type="checkbox">
+                      <label for="allergy03">돼지고기</label>
+                    </div>
+                    <div class="check_wrap">
+                      <input id="allergy04" type="checkbox">
+                      <label for="allergy04">땅콩</label>
+                    </div>
+                    <div class="check_wrap">
+                      <input id="allergy05" type="checkbox">
+                      <label for="allergy05">밀</label>
+                    </div>
+                    <div class="check_wrap">
+                      <input id="allergy06" type="checkbox">
+                      <label for="allergy06">복숭아</label>
+                    </div>
+                    <div class="check_wrap">
+                      <input id="allergy07" type="checkbox">
+                      <label for="allergy07">우유</label>
+                    </div>
+                    <div class="check_wrap">
+                      <input id="allergy08" type="checkbox">
+                      <label for="allergy08">없음</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="btn_search">
+                  <button type="submit">검색</button>
+                </div>
+              </div>
+            </div>
+            <button class="btn_search_close" type="button"></button>
+          </fieldset>
+        </form>
+      </div>
+    </header>
+    <div id="container" class="menu_page">
+      <div class="sub_visual">
+        <img src="images/bg_icecream_menu.jpg" alt="icecream페이지">
+      </div>
+      <div class="contents">
+        <div class="best_menu_wrap">
+          <h3>Monthly Best Icecream</h3>
+          <div class="swiper-container best_menu_slider">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <a href="#">
+                  <div class="img_wrap rank_1">
+                    <strong>1위</strong>
+                    <img src="images/1720606225.png" alt="">
+                  </div>
+                  <span class="corn_title">핑크스푼 비긴즈</span>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#">
+                  <div class="img_wrap rank_2">
+                    <strong>2위</strong>
+                    <img src="images/1528197022.png" alt="">
+                  </div>
+                  <span class="corn_title">엄마는 외계인</span>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#">
+                  <div class="img_wrap rank_3">
+                    <strong>3위</strong>
+                    <img src="images/1452062933.png" alt="">
+                  </div>
+                  <span class="corn_title">아몬드 봉봉</span>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#">
+                  <div class="img_wrap">
+                    <strong>4위</strong>
+                    <img src="images/1699512103.png" alt="">
+                  </div>
+                  <span class="corn_title">짱구가 좋아하는 외계인의 바나나킥</span>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#">
+                  <div class="img_wrap">
+                    <strong>5위</strong>
+                    <img src="images/1648796203.png" alt="">
+                  </div>
+                  <span class="corn_title">민트 초콜릿 칩</span>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#">
+                  <div class="img_wrap">
+                    <strong>6위</strong>
+                    <img src="images/1547103366.png" alt="">
+                  </div>
+                  <span class="corn_title">마법사의 할로윈</span>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#">
+                  <div class="img_wrap">
+                    <strong>7위</strong>
+                    <img src="images/1530775918.png" alt="">
+                  </div>
+                  <span class="corn_title">뉴욕 치즈케이크</span>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#">
+                  <div class="img_wrap">
+                    <strong>8위</strong>
+                    <img src="images/1452062882.png" alt="">
+                  </div>
+                  <span class="corn_title">체리쥬빌레</span>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#">
+                  <div class="img_wrap">
+                    <strong>9위</strong>
+                    <img src="images/1530779443.png" alt="">
+                  </div>
+                  <span class="corn_title">사랑에 빠진 딸기</span>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#">
+                  <div class="img_wrap">
+                    <strong>8위</strong>
+                    <img src="images/1638868047.png" alt="">
+                  </div>
+                  <span class="corn_title">오레오 쿠키 앤 크림</span>
+                </a>
+              </div>
+              
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+        <div class="all_menu_wrap">
+          <h3>Icecream</h3>
+          <ul class="all_menu">
+            <li class="icecream_product">
+              <a class="icecream" href="#">
+                <strong>핑크스푼 비긴즈</strong>
+                <div class="img_wrap">
+                  <img src="images/1720606225.png" alt="">
+                </div>
+              </a>
+              <div class="hashtag_wrap">
+                <ul class="hashtag">
+                  <li><a href="#">#핑크스푼비긴즈</a></li>
+                  <li><a href="#">#스트로베리</a></li>
+                </ul>
+                <button class="btn_more" type="button">해시태그 더보기</button>
+              </div>
+              <div class="modal_more_wrap">
+                <div class="modal_more">
+                  <ul class="modal">
+                    <li><a href="#">#핑크스푼비긴즈</a></li>
+                    <li><a href="#">#스트로베리</a></li>
+                    <li><a href="#">#크림치즈</a></li>
+                    <li><a href="#">#치즈케이크</a></li>
+                  </ul>
+                  <button class="btn_close" type="button">-</button>
+                </div>
+              </div>
+              <div class="btn_buy">
+                <a href="#">구매하기</a>
+              </div>
+            </li>
+            <li class="icecream_product">
+              <a class="icecream" href="#">
+                <strong>아이스 코코넛 커피</strong>
+                <div class="img_wrap">
+                  <img src="images/1681203976.png" alt="">
+                </div>
+              </a>
+              <div class="hashtag_wrap">
+                <ul class="hashtag">
+                  <li><a href="#">#아이스코코넛커피</a></li>
+                  <li><a href="#">#코코넛</a></li>
+                </ul>
+                <button class="btn_more" type="button">해시태그 더보기</button>
+              </div>
+              <div class="modal_more_wrap">
+                <div class="modal_more">
+                  <ul class="modal">
+                    <li><a href="#">#아이스코코넛커피</a></li>
+                    <li><a href="#">#코코넛</a></li>
+                    <li><a href="#">#크림치즈</a></li>
+                    <li><a href="#">#커피</a></li>
+                  </ul>
+                  <button class="btn_close" type="button">-</button>
+                </div>
+              </div>
+              <div class="btn_buy">
+                <a href="#">구매하기</a>
+              </div>
+            </li>
+            <li class="icecream_product">
+              <a class="icecream" href="#">
+                <strong>피카피카 피카츄</strong>
+                <div class="img_wrap">
+                  <img src="images/1714821671.png" alt="">
+                </div>
+              </a>
+              <div class="hashtag_wrap">
+                <ul class="hashtag">
+                  <li><a href="#">#바나나</a></li>
+                  <li><a href="#">#커스터드크림</a></li>
+                </ul>
+              </div>
+              <div class="btn_buy">
+                <a href="#">구매하기</a>
+              </div>
+            </li>
+            <li class="icecream_product">
+              <a class="icecream" href="#">
+                <strong>비타500 소르베</strong>
+                <div class="img_wrap">
+                  <img src="images/1696731107.png" alt="">
+                </div>
+              </a>
+              <div class="hashtag_wrap">
+                <ul class="hashtag">
+                  <li><a href="#">#비타500</a></li>
+                  <li><a href="#">#소르베</a></li>
+                </ul>
+              </div>
+              <div class="btn_buy">
+                <a href="#">구매하기</a>
+              </div>
+            </li>
+            <li class="icecream_product">
+              <a class="icecream" href="#">
+                <strong>찰떡콩떡</strong>
+                <div class="img_wrap">
+                  <img src="images/1686212984.png" alt="">
+                </div>
+              </a>
+              <div class="hashtag_wrap">
+                <ul class="hashtag">
+                  <li><a href="#">#찰떡콩떡</a></li>
+                  <li><a href="#">#콩고물</a></li>
+                </ul>
+                <button class="btn_more" type="button">해시태그 더보기</button>
+              </div>
+              <div class="modal_more_wrap">
+                <div class="modal_more">
+                  <ul class="modal">
+                    <li><a href="#">#찰떡콩떡</a></li>
+                    <li><a href="#">#콩고물</a></li>
+                    <li><a href="#">#찰떡</a></li>
+                  </ul>
+                  <button class="btn_close" type="button">-</button>
+                </div>
+              </div>
+              <div class="btn_buy">
+                <a href="#">구매하기</a>
+              </div>
+            </li>
+            <li class="icecream_product">
+              <a class="icecream" href="#">
+                <strong>피나 콜라다</strong>
+                <div class="img_wrap">
+                  <img src="images/1680839472.png" alt="">
+                </div>
+              </a>
+              <div class="hashtag_wrap">
+                <ul class="hashtag">
+                  <li><a href="#">#파인애플</a></li>
+                  <li><a href="#">#코코넛</a></li>
+                </ul>
+                <button class="btn_more" type="button">해시태그 더보기</button>
+              </div>
+              <div class="modal_more_wrap">
+                <div class="modal_more">
+                  <ul class="modal ">
+                    <li><a href="#">#파인애플</a></li>
+                    <li><a href="#">#코코넛</a></li>
+                    <li><a href="#">#샤베트</a></li>
+                  </ul>
+                  <button class="btn_close" type="button">-</button>
+                </div>
+              </div>
+              <div class="btn_buy">
+                <a href="#">구매하기</a>
+              </div>
+            </li>
+            <li class="icecream_product">
+              <a class="icecream" href="#">
+                <strong>오레오 쿠키 앤 크림</strong>
+                <div class="img_wrap">
+                  <img src="images/1638868047.png" alt="">
+                </div>
+              </a>
+              <div class="hashtag_wrap">
+                <ul class="hashtag">
+                  <li><a href="#">#오레오쿠키앤크림</a></li>
+                </ul>
+              </div>
+              <div class="btn_buy">
+                <a href="#">구매하기</a>
+              </div>
+            </li>
+            <li class="icecream_product">
+              <a class="icecream" href="#">
+                <strong>월넛</strong>
+                <div class="img_wrap">
+                  <img src="images/1638867849.png" alt="">
+                </div>
+              </a>
+              <div class="hashtag_wrap">
+                <ul class="hashtag">
+                  <li><a href="#">#월넛</a></li>
+                </ul>
+              </div>
+              <div class="btn_buy">
+                <a href="#">구매하기</a>
+              </div>
+            </li>
+            <li class="icecream_product">
+              <a class="icecream" href="#">
+                <strong>오레오 쿠키 앤 카라멜</strong>
+                <div class="img_wrap">
+                  <img src="images//1515627535.png" alt="">
+                </div>
+              </a>
+              <div class="hashtag_wrap">
+                <ul class="hashtag">
+                  <li><a href="#">#단짠단짠</a></li>
+                  <li><a href="#">#솔티드카라멜아이스크림</a></li>
+                </ul>
+                <button class="btn_more" type="button">해시태그 더보기</button>
+              </div>
+              <div class="modal_more_wrap">
+                <div class="modal_more">
+                  <ul class="modal ">
+                    <li><a href="#">#단짠단짠</a></li>
+                    <li><a href="#">#솔티드카라멜아이스크림</a></li>
+                    <li><a href="#">#오레오쿠키</a></li>
+                    <li><a href="#">#카라멜리본</a></li>
+                    <li><a href="#">#오레오쿠키앤카라멜</a></li>
+                  </ul>
+                  <button class="btn_close" type="button">-</button>
+                </div>
+              </div>
+              <div class="btn_buy">
+                <a href="#">구매하기</a>
+              </div>
+            </li>
+            <li class="icecream_product">
+              <a class="icecream" href="#">
+                <strong>프랄린 앤 크림</strong>
+                <div class="img_wrap">
+                  <img src="images/1562145930.png" alt="">
+                </div>
+              </a>
+              <div class="hashtag_wrap">
+                <ul class="hashtag">
+                  <li><a href="#">#프랄린</a></li>
+                  <li><a href="#">#초콜릿</a></li>
+                </ul>
+                <button class="btn_more" type="button">해시태그 더보기</button>
+              </div>
+              <div class="modal_more_wrap">
+                <div class="modal_more">
+                  <ul class="modal ">
+                    <li><a href="#">#프랄린</a></li>
+                    <li><a href="#">#초콜릿</a></li>
+                    <li><a href="#">#크림</a></li>
+                  </ul>
+                  <button class="btn_close" type="button">-</button>
+                </div>
+              </div>
+              <div class="btn_buy">
+                <a href="#">구매하기</a>
+              </div>
+            </li>
+            <li class="icecream_product">
+              <a class="icecream" href="#">
+                <strong>알폰소 망고</strong>
+                <div class="img_wrap">
+                  <img src="images/1467791176.png" alt="">
+                </div>
+              </a>
+              <div class="hashtag_wrap">
+                <ul class="hashtag">
+                  <li><a href="#">#망고</a></li>
+                </ul>
+              </div>
+              <div class="btn_buy">
+                <a href="#">구매하기</a>
+              </div>
+            </li>
+            <li class="icecream_product">
+              <a class="icecream" href="#">
+                <strong>다크 초코 나이트</strong>
+                <div class="img_wrap">
+                  <img src="images/1551622151.png" alt="">
+                </div>
+              </a>
+              <div class="hashtag_wrap">
+                <ul class="hashtag">
+                  <li><a href="#">#초콜릿</a></li>
+                  <li><a href="#">#프레첼</a></li>
+                </ul>
+              </div>
+              <div class="btn_buy">
+                <a href="#">구매하기</a>
+              </div>
+            </li>
+            <li class="icecream_product">
+              <a class="icecream" href="#">
+                <strong>엄마는 외계인</strong>
+                <div class="img_wrap">
+                  <img src="images/1528197022.png" alt="">
+                </div>
+              </a>
+              <div class="hashtag_wrap">
+                <ul class="hashtag">
+                  <li><a href="#">#초콜릿</a></li>
+                  <li><a href="#">#초코볼</a></li>
+                </ul>
+                <button class="btn_more" type="button">해시태그 더보기</button>
+              </div>
+              <div class="modal_more_wrap">
+                <div class="modal_more">
+                  <ul class="modal ">
+                    <li><a href="#">#초콜릿</a></li>
+                    <li><a href="#">#초코볼</a></li>
+                    <li><a href="#">#엄마는외계인</a></li>
+                  </ul>
+                  <button class="btn_close" type="button">-</button>
+                </div>
+              </div>
+              <div class="btn_buy">
+                <a href="#">구매하기</a>
+              </div>
+            </li>
+            <li class="icecream_product">
+              <a class="icecream" href="#">
+                <strong>허니 치즈 트랩</strong>
+                <div class="img_wrap">
+                  <img src="images/1559982007.png" alt="">
+                </div>
+              </a>
+              <div class="hashtag_wrap">
+                <ul class="hashtag">
+                  <li><a href="#">#마스카포네</a></li>
+                  <li><a href="#">#치즈케이크</a></li>
+                </ul>
+                <button class="btn_more" type="button">해시태그 더보기</button>
+              </div>
+              <div class="modal_more_wrap">
+                <div class="modal_more">
+                  <ul class="modal ">
+                    <li><a href="#">#마스카포네</a></li>
+                    <li><a href="#">#치즈케이크</a></li>
+                    <li><a href="#">#허니치즈트랩</a></li>
+                    <li><a href="#">#톰과제리</a></li>
+                  </ul>
+                  <button class="btn_close" type="button">-</button>
+                </div>
+              </div>
+              <div class="btn_buy">
+                <a href="#">구매하기</a>
+              </div>
+            </li>
+            <li class="icecream_product">
+              <a class="icecream" href="#">
+                <strong>아몬드 봉봉</strong>
+                <div class="img_wrap">
+                  <img src="images/1452062933.png" alt="">
+                </div>
+              </a>
+              <div class="hashtag_wrap">
+                <ul class="hashtag">
+                  <li><a href="#">#아몬드</a></li>
+                  <li><a href="#">#초콜릿</a></li>
+                </ul>
+                <button class="btn_more" type="button">해시태그 더보기</button>
+              </div>
+              <div class="modal_more_wrap">
+                <div class="modal_more">
+                  <ul class="modal ">
+                    <li><a href="#">#아몬드</a></li>
+                    <li><a href="#">#초콜릿</a></li>
+                    <li><a href="#">#아몬드봉봉</a></li>
+                  </ul>
+                  <button class="btn_close" type="button">-</button>
+                </div>
+              </div>
+              <div class="btn_buy">
+                <a href="#">구매하기</a>
+              </div>
+            </li>
+            <li class="icecream_product">
+              <a class="icecream" href="#">
+                <strong>마법사의 할로윈</strong>
+                <div class="img_wrap">
+                  <img src="images/1547103366.png" alt="">
+                </div>
+              </a>
+              <div class="hashtag_wrap">
+                <ul class="hashtag">
+                  <li><a href="#">#초콜릿</a></li>
+                  <li><a href="#">#민트향</a></li>
+                </ul>
+                <button class="btn_more" type="button">해시태그 더보기</button>
+              </div>
+              <div class="modal_more_wrap">
+                <div class="modal_more">
+                  <ul class="modal ">
+                    <li><a href="#">#초콜릿</a></li>
+                    <li><a href="#">#민트향</a></li>
+                    <li><a href="#">#해피할로윈</a></li>
+                    <li><a href="#">#마법사의할로윈</a></li>
+                  </ul>
+                  <button class="btn_close" type="button">-</button>
+                </div>
+              </div>
+              <div class="btn_buy">
+                <a href="#">구매하기</a>
+              </div>
+            </li>
+            <li class="icecream_product">
+              <a class="icecream" href="#">
+                <strong>민트 초콜릿 칩</strong>
+                <div class="img_wrap">
+                  <img src="images/1648796203.png" alt="">
+                </div>
+              </a>
+              <div class="hashtag_wrap">
+                <ul class="hashtag">
+                  <li><a href="#">#민트</a></li>
+                  <li><a href="#">#초콜릿칩</a></li>
+                </ul>
+                <button class="btn_more" type="button">해시태그 더보기</button>
+              </div>
+              <div class="modal_more_wrap">
+                <div class="modal_more">
+                  <ul class="modal ">
+                    <li><a href="#">#민트</a></li>
+                    <li><a href="#">#초콜릿칩</a></li>
+                    <li><a href="#">#민트초콜릿칩</a></li>
+                  </ul>
+                  <button class="btn_close" type="button">-</button>
+                </div>
+              </div>
+              <div class="btn_buy">
+                <a href="#">구매하기</a>
+              </div>
+            </li>
+            <li class="icecream_product">
+              <a class="icecream" href="#">
+                <strong>사랑에 빠진 딸기</strong>
+                <div class="img_wrap">
+                  <img src="images/1530779443.png" alt="">
+                </div>
+              </a>
+              <div class="hashtag_wrap">
+                <ul class="hashtag">
+                  <li><a href="#">#사빠딸</a></li>
+                  <li><a href="#">#사랑에빠진딸기</a></li>
+                </ul>
+                <button class="btn_more" type="button">해시태그 더보기</button>
+              </div>
+              <div class="modal_more_wrap">
+                <div class="modal_more">
+                  <ul class="modal">
+                    <li><a href="#">#사빠딸</a></li>
+                    <li><a href="#">#사랑에빠진딸기</a></li>
+                    <li><a href="#">#크런치초콜릿</a></li>
+                    <li><a href="#">#치즈케이크</a></li>
+                  </ul>
+                  <button class="btn_close" type="button">-</button>
+                </div>
+              </div>
+              <div class="btn_buy">
+                <a href="#">구매하기</a>
+              </div>
+            </li>
+            <li class="icecream_product">
+              <a class="icecream" href="#">
+                <strong>뉴욕 치즈케이크</strong>
+                <div class="img_wrap">
+                  <img src="images/1530775918.png" alt="">
+                </div>
+              </a>
+              <div class="hashtag_wrap">
+                <ul class="hashtag">
+                  <li><a href="#">#치즈</a></li>
+                  <li><a href="#">#치즈케이크</a></li>
+                </ul>
+              </div>
+              <div class="btn_buy">
+                <a href="#">구매하기</a>
+              </div>
+            </li>
+            <li class="icecream_product">
+              <a class="icecream" href="#">
+                <strong>피스타치오 아몬드</strong>
+                <div class="img_wrap">
+                  <img src="images/1530775359.png" alt="">
+                </div>
+              </a>
+              <div class="hashtag_wrap">
+                <ul class="hashtag">
+                  <li><a href="#">#피스타치오</a></li>
+                  <li><a href="#">#아몬드</a></li>
+                </ul>
+              </div>
+              <div class="btn_buy">
+                <a href="#">구매하기</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="sub_pagination_wrap">
+          <a class="btn_prev" href="#">이전으로</a>
+          <span class="active">1</span>
+          <a href="#">2</a>
+          <a href="#">3</a>
+          <a class="btn_next" href="#">다음으로</a>
+        </div>
+      </div>
+    </div>
+    <footer id="footer">
+      <div class="policy_wrap">
+          <ul class="policy">
+            <li><a class="txt_point01" href="#">개인정보처리방침</a></li>
+            <li><a href="#">이용약관</a></li>
+            <li><a href="#">점포개설문의</a></li>
+            <li><a href="#">채용문의</a></li>
+          </ul>
+      </div>
+      <h2 class="footer_logo">
+        <a href="#">
+          <img src="images/full_logo.png" alt="배스킨라빈스">
+        </a>
+      </h2>
+      <div class="info">
+        <p>
+          서울특별시 서초구 남부순환로 2620(양재동 11-149번지)<br>
+          비알코리아(주) 대표이사 도세호<br>
+          개인정보관리책임자 : 김경우<br>
+          사업자 등록번호 : 303-81-09535<br>
+          TEL : 080-555-3131
+        </p>
+        <p class="copy">
+          Copyright ⓒ 2016 BRKOREA Coh3y. All Rights Reserved.
+        </p>
+      </div>
+      <div class="familysite_wrap">
+        <button type="button">FAMILY SITE</button>
+        <ul class="familysite">
+          <li><a href="http://www.baskinschool.co.kr/" target="_blank">배스킨 스쿨</a></li>
+          <li><a href="http://www.spc.co.kr/" target="_blank">SPC그룹사이트</a></li>
+          <li><a href="http://www.spcmagazine.com/" target="_blank">SPC MAGAZINE</a></li>
+          <li><a href="http://www.brkorea.co.kr/" target="_blank">BR코리아</a></li>
+          <li><a href="http://www.happypointcard.com" target="_blank">해피포인트카드</a></li>
+          <li><a href="http://www.caffe-pascucci.co.kr/" target="_blank">파스쿠찌</a></li>
+          <li><a href="http://www.spcsamlip.co.kr/" target="_blank">삼립</a></li>
+          <li><a href="http://www.paris.co.kr/" target="_blank">파리바게트</a></li>
+          <li><a href="http://www.dunkindonuts.co.kr/" target="_blank">던킨도너츠</a></li>
+        </ul>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>

@@ -1,0 +1,809 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+  <meta  name="description" content="행복을 전하는 프리미엄 아이스크림, 배스킨라빈스 공식 홈페이지 입니다.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="[배스킨라빈스]">
+  <meta property="og:url" content="http://duddltn.dothome.co.kr/baskin">
+  <meta property="og:image" content="http://duddltn.dothome.co.kr/baskin/images/img_br_sns.png">
+  <meta property="og:description" content="행복을 전하는 프리미엄 아이스크림, 배스킨라빈스 공식 홈페이지 입니다.">
+  <title>배스킨라빈스</title>
+  <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+  <link rel="apple-touch-icon" href="images/logo.png">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@700;800;900;1000&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+  <link rel="stylesheet" href="css/jquery-ui.min.css">
+  <link rel="stylesheet" href="css/swiper.min.css">
+  <link rel="stylesheet" href="css/common.css?v=<?php echo time(); ?>">
+  <link rel="stylesheet" href="css/layout.css?v=<?php echo time(); ?>">
+  <script src="js/jquery-3.6.1.min.js"></script>
+  <script src="js/jquery-ui.min.js"></script>
+  <script src="js/swiper.min.js"></script>
+  <script src="js/ui_common.js?v=<?php echo time(); ?>"></script>
+</head>
+<body>
+  <div id="skip_navi">
+    <a href="#container">본문바로가기</a>
+  </div>
+  <div id="wrap">
+    <header id="header">
+      <h1 class="logo">
+        <a href="index.html"><img src="images/logo.png" alt="배스킨라빈스"></a>
+      </h1>
+      <button class="btn_open">전체메뉴 열기</button>
+      <div class="dimmed"></div>
+      <div class="gnb_area">
+        <div class="util_wrap">
+          <ul class="util">
+            <li><a href="login.html">LOGIN</a></li>
+            <li><a href="#">JOIN</a></li>
+          </ul>
+          <button class="btn_search" type="button">SEARCH<i class="xi-search"></i></button>
+        </div>
+        <nav class="gnb_wrap">
+          <ul class="gnb">
+            <li>
+              <a href="#">FLAVOR OF THE MONTH</a>
+            </li>
+            <li>
+              <a href="#">MENU</a>
+              <ul class="depth02">
+                <li><a href="menu.html">아이스크림</a></li>
+                <li><a href="#">아이스크림케이크</a></li>
+                <li><a href="#">음료</a></li>
+                <li><a href="#">커피</a></li>
+                <li><a href="#">디저트</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">EVENT</a>
+              <ul class="depth02">
+                <li><a href="event.html">이벤트</a></li>
+                <li><a href="#">당첨자발표</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">STORE</a>
+              <ul class="depth02">
+                <li><a href="#">매장찾기</a></li>
+                <li><a href="#">고객센터</a></li>
+                <li><a href="#">단체주문</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">ABOUT</a>
+              <ul class="depth02 ">
+                <li><a href="notice.html">공지사항</a></li>
+                <li><a href="#">보도자료</a></li>
+                <li><a href="#">채용정보</a></li>
+                <li><a href="#">점포개설문의</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+        <div class="sns_wrap">
+          <div class="sns">
+            <a href="https://m.facebook.com/baskinrobbinskr/" target="_blank"><img src="images/sns_facebook.png" alt="페이스북"></a>
+            <a href="https://blog.naver.com/brgirl31" target="_blank"><img src="images/sns_blog.png" alt="네이버블로그"></a>
+            <a href="https://mobile.twitter.com/BaskinrobbinsKR" target="_blank"><img src="images/sns_twitter.png" alt="트위터"></a>
+            <div class="double">
+              <a href="https://www.instagram.com/baskinrobbinskorea/" target="_blank"><img src="images/sns_instagram.png" alt="인스타그램"></a>
+              <a href="https://www.youtube.com/user/baskinrobbinskorea" target="_blank"><img src="images/sns_youtube.png" alt="유투브"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="btn_close" type="button">
+        <img src="images/btn_pop_close.png" alt="전체메뉴 닫기">
+      </button>
+      <div class="search_modal_wrap" tabindex="0">
+        <form>
+          <fieldset>
+            <legend>통합검색</legend>
+            <div class="search_modal">
+              <div class="modal_top">
+                <h2>Search<i class="xi-search"></i></h2>
+              </div>
+              <div class="search_wrap">
+                <div class="search_name">
+                  <h3>제품명</h3>
+                  <div class="select_wrap">
+                    <select title="메뉴선택">
+                      <option value="">전체</option>
+                      <option value="A">아이스크림</option>
+                      <option value="B">아이스크림케이크</option>
+                      <option value="C">음료</option>
+                      <option value="D">커피</option>
+                      <option value="E">디저트</option>
+                      <option value="F">block pack</option>
+                      <option value="G">ready pack</option>
+                    </select>
+                  </div>
+                  <input type="text" title="제품명검색" placeholder="제품명을 입력하세요">
+                </div>
+                <div class="search_hashtag">
+                  <h3>해시태그</h3>
+                  <dl>
+                    <dt>자주 찾는 해시태그</dt>
+                    <dd>
+                      <a href="#">#엄마는 외계인</a>
+                      <a href="#">#사랑에 빠진 딸기</a>
+                      <a href="#">#아몬드 봉봉</a>
+                      <a href="#">#초콜릿 무스</a>
+                      <a href="#">#마법사의 할로윈</a>
+                    </dd>
+                  </dl>
+                  <div class="input_wrap">
+                    <input type="text" title="해시태그검색" placeholder="해시태그를 입력하세요">
+                  </div>
+                </div>
+                <div class="check_allergy">
+                  <h3>알레르기</h3>
+                  <div class="allergy">
+                    <div class="check_wrap">
+                      <input id="allergy01" type="checkbox">
+                      <label for="allergy01">계란</label>
+                    </div>
+                    <div class="check_wrap">
+                      <input id="allergy02" type="checkbox">
+                      <label for="allergy02">대두</label>
+                    </div>
+                    <div class="check_wrap">
+                      <input id="allergy03" type="checkbox">
+                      <label for="allergy03">돼지고기</label>
+                    </div>
+                    <div class="check_wrap">
+                      <input id="allergy04" type="checkbox">
+                      <label for="allergy04">땅콩</label>
+                    </div>
+                    <div class="check_wrap">
+                      <input id="allergy05" type="checkbox">
+                      <label for="allergy05">밀</label>
+                    </div>
+                    <div class="check_wrap">
+                      <input id="allergy06" type="checkbox">
+                      <label for="allergy06">복숭아</label>
+                    </div>
+                    <div class="check_wrap">
+                      <input id="allergy07" type="checkbox">
+                      <label for="allergy07">우유</label>
+                    </div>
+                    <div class="check_wrap">
+                      <input id="allergy08" type="checkbox">
+                      <label for="allergy08">없음</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="btn_search">
+                  <button type="submit">검색</button>
+                </div>
+              </div>
+            </div>
+            <button class="btn_search_close" type="button"></button>
+          </fieldset>
+        </form>
+      </div>
+    </header>
+    <div id="container">
+      <section class="main_slider_wrap">
+        <h2 class="blind">메인비쥬얼</h2>
+        <div class="swiper-container main_slider">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide on">
+              <a href="#">
+                <img src="images/1720605812.jpg" alt="핑크스푼비긴즈">
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#">
+                <img src="images/1657500918.jpg" alt="아이스 찹쌀떡 선물세트">
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#">
+                <img src="images/1676003528.jpg" alt="기아멤버스">
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#">
+                <img src="images/1667539289.png" alt="제휴혜택">
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#">
+                <img src="images/1667440414.png" alt="T멤버쉽">
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#">
+                <img src="images/1667383197.png" alt="Mpoint">
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#">
+                <img src="images/1643869381.png" alt="kt멤버쉽">
+              </a>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </section>
+      <section class="main_menu_wrap">
+          <h2 class="main_tit">BR MENU</h2>
+          <ul class="tab_menu">
+            <li class="active"><a href="#">Icecream</a></li>
+            <li><a href="#">IcecreamCake</a></li>
+            <li><a href="#">Beverage</a></li>
+            <li><a href="#">Coffee</a></li>
+            <li><a href="#">Dessert</a></li>
+          </ul>
+          <div class="menu_slider_area">
+            <div class="menu_slider_wrap on">
+              <div class="swiper-container menu_slider">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <a href="#">
+                      <div class="img_wrap corn">
+                        <img src="images/1720606225.png" alt="">
+                      </div>
+                      <strong class="corn_title">핑크스푼 비긴즈</strong>
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#">
+                      <div class="img_wrap corn">
+                        <img src="images/1528197022.png" alt="">
+                      </div>
+                      <strong class="corn_title">엄마는 외계인</strong>
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#">
+                      <div class="img_wrap corn">
+                        <img src="images/1452062933.png" alt="">
+                      </div>
+                      <strong class="corn_title">아몬드 봉봉</strong>
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#">
+                      <div class="img_wrap corn">
+                        <img src="images/1699512103.png" alt="">
+                      </div>
+                      <strong class="corn_title">짱구가 좋아하는 외계인의 바나나킥</strong>
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#">
+                      <div class="img_wrap corn">
+                        <img src="images/1648796203.png" alt="">
+                      </div>
+                      <strong class="corn_title">민트 초콜릿칩</strong>
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#">
+                      <div class="img_wrap corn">
+                        <img src="images/1547103366.png" alt="">
+                      </div>
+                      <strong class="corn_title">마법사의 할로윈</strong>
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#">
+                      <div class="img_wrap corn">
+                        <img src="images/1530775918.png" alt="">
+                      </div>
+                      <strong class="corn_title">뉴욕 치즈케이크</strong>
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#">
+                      <div class="img_wrap corn">
+                        <img src="images/1452062882.png" alt="">
+                      </div>
+                      <strong class="corn_title">체리쥬빌레</strong>
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#">
+                      <div class="img_wrap corn">
+                        <img src="images/1530779443.png" alt="">
+                      </div>
+                      <strong class="corn_title">사랑에 빠진 딸기</strong>
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#">
+                      <div class="img_wrap corn">
+                        <img src="images/1638868047.png" alt="">
+                      </div>
+                      <strong class="corn_title">오레오 쿠키 앤 크림</strong>
+                    </a>
+                  </div>
+                </div>
+                <div class="swiper-button-prev btn_arrow"><i class="xi-angle-left-min"></i></div>
+                <div class="swiper-button-next btn_arrow"><i class="xi-angle-right-min"></i></div>
+              </div>
+            </div>
+            <div class="menu_slider_wrap">
+              <div class="swiper-container menu_slider">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <a href="#">
+                      <div class="img_wrap">
+                        <img src="images/1699509069.png" alt="">
+                      </div>
+                      <strong>짱구가 좋아하는 외계인의 바나나킥 케이크</strong>
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#">
+                      <div class="img_wrap">
+                        <img src="images/1662859772.png" alt="">
+                      </div>
+                      <strong>겨울에 찾아 온 팽도리</strong>
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#">
+                      <div class="img_wrap">
+                        <img src="images/1646978787.png" alt="">
+                      </div>
+                      <strong>해피 베어 데이</strong>
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#">
+                      <div class="img_wrap">
+                        <img src="images/1646976859.png" alt="">
+                      </div>
+                      <strong>잡아라! 포켓몬 수퍼볼</strong>
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#">
+                      <div class="img_wrap">
+                        <img src="images/1646977799.png" alt="">
+                      </div>
+                      <strong>나눠먹는 와츄원</strong>
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#">
+                      <div class="img_wrap">
+                        <img src="images/1683681655.png" alt="">
+                      </div>
+                      <strong>미스터리 그린 쿠앤크 케이크</strong>
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#">
+                      <div class="img_wrap">
+                        <img src="images/1704332440.png" alt="">
+                      </div>
+                      <strong>미니 해피 버스데이 케이크</strong>
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#">
+                      <div class="img_wrap">
+                        <img src="images/1675498854.png" alt="">
+                      </div>
+                      <strong>미니 골라먹는 와츄원</strong>
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#">
+                      <div class="img_wrap">
+                        <img src="images/1714823561.png" alt="">
+                      </div>
+                      <strong>해피 버스데이 케이크</strong>
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#">
+                      <div class="img_wrap">
+                        <img src="images/1641651734.png" alt="">
+                      </div>
+                      <strong>우주에서 온 엄마는 외계인</strong>
+                    </a>
+                  </div>
+                </div>
+                <div class="swiper-button-prev btn_arrow"><i class="xi-angle-left-min"></i></div>
+                <div class="swiper-button-next btn_arrow"><i class="xi-angle-right-min"></i></div>
+              </div>
+            </div>
+            <div class="menu_slider_wrap">
+              <div class="swiper-container menu_slider">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <a href="#">
+                      <div class="img_wrap">
+                        <img src="images/1641878755.png" alt="">
+                      </div>
+                      <strong>딸기 치즈케이크 블라스트</strong>
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#">
+                      <div class="img_wrap">
+                        <img src="images/1652174127.png" alt="">
+                      </div>
+                      <strong>외계인의 바나나킥 블라스트</strong>
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#">
+                      <div class="img_wrap">
+                        <img src="images/1694310292.png" alt="">
+                      </div>
+                      <strong>토피넛 캔디라떼 (HOT)</strong>
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#">
+                      <div class="img_wrap">
+                        <img src="images/1694310154.png" alt="">
+                      </div>
+                      <strong>토피넛 캔디라떼 (ICED)</strong>
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#">
+                      <div class="img_wrap">
+                        <img src="images/1654840288.png" alt="">
+                      </div>
+                      <strong>흑임자 오트 라떼 (HOT)</strong>
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#">
+                      <div class="img_wrap">
+                        <img src="images/1654840201.png" alt="">
+                      </div>
+                      <strong>흑임자 오트 라떼 (ICED)</strong>
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#">
+                      <div class="img_wrap">
+                        <img src="images/1654839907.png" alt="">
+                      </div>
+                      <strong>피스타치오 초코아몬드 블라스트</strong>
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#">
+                      <div class="img_wrap">
+                        <img src="images/1720173822.png" alt="">
+                      </div>
+                      <strong>푸린 피치 블라스트</strong>
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#">
+                      <div class="img_wrap">
+                        <img src="images/1652173872.png" alt="">
+                      </div>
+                      <strong>비타 500 블라스트</strong>
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#">
+                      <div class="img_wrap">
+                        <img src="images/1714823720.png" alt="">
+                      </div>
+                      <strong>피카츄 초코바나나 블라스트</strong>
+                    </a>
+                  </div>
+                </div>
+                <div class="swiper-button-prev btn_arrow"><i class="xi-angle-left-min"></i></div>
+                <div class="swiper-button-next btn_arrow"><i class="xi-angle-right-min"></i></div>
+              </div>
+            </div>
+            <div class="menu_slider_wrap">
+              <div class="swiper-container menu_slider">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <a href="#">
+                      <div class="img_wrap">
+                        <img src="images/1662093518.png" alt="">
+                      </div>
+                      <strong>콜드브루 아메리카토</strong>
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#">
+                      <div class="img_wrap">
+                        <img src="images/1662093507.png" alt="">
+                      </div>
+                      <strong>콜드브루 오트라떼</strong>
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#">
+                      <div class="img_wrap">
+                        <img src="images/1631414848.png" alt="">
+                      </div>
+                      <strong>카페31 아메리카노</strong>
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#">
+                      <div class="img_wrap">
+                        <img src="images/1619857592.png" alt="">
+                      </div>
+                      <strong>아메리카노</strong>
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#">
+                      <div class="img_wrap">
+                        <img src="images/1619857603.png" alt="">
+                      </div>
+                      <strong>아이스 아메리카노</strong>
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#">
+                      <div class="img_wrap">
+                        <img src="images/1619856899.png" alt="">
+                      </div>
+                      <strong>바닐라빈 라떼</strong>
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#">
+                      <div class="img_wrap">
+                        <img src="images/1619856877.png" alt="">
+                      </div>
+                      <strong>아이스 바닐라빈 라떼</strong>
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#">
+                      <div class="img_wrap">
+                        <img src="images//1619857641.png" alt="">
+                      </div>
+                      <strong>연유 라떼</strong>
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#">
+                      <div class="img_wrap">
+                        <img src="images/1619857818.png" alt="">
+                      </div>
+                      <strong>아이스 연유 라떼</strong>
+                    </a>
+                  </div>
+                </div>
+                <div class="swiper-button-prev btn_arrow"><i class="xi-angle-left-min"></i></div>
+                <div class="swiper-button-next btn_arrow"><i class="xi-angle-right-min"></i></div>
+              </div>
+            </div>
+            <div class="menu_slider_wrap">
+              <div class="swiper-container menu_slider">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <a href="#">
+                      <div class="img_wrap">
+                        <img src="images/1699512548.png" alt="">
+                      </div>
+                      <strong>더블 쿠키 샌드 바나나킥&amp;초콜릿</strong>
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#">
+                      <div class="img_wrap">
+                        <img src="images/1686384738.png" alt="">
+                      </div>
+                      <strong>아이스 쿠키 샌드 바닐라</strong>
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#">
+                      <div class="img_wrap">
+                        <img src="images/1678511661.png" alt="">
+                      </div>
+                      <strong>아이스 모나카 우유</strong>
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#">
+                      <div class="img_wrap macarong">
+                        <img src="images/1678327039.png" alt="">
+                      </div>
+                      <strong>아이스 마카롱 초콜릿 무스</strong>
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#">
+                      <div class="img_wrap macarong">
+                        <img src="images/1678327099.png" alt="">
+                      </div>
+                      <strong>아이스 마카롱 바닐라 카라멜 앤 피칸</strong>
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#">
+                      <div class="img_wrap">
+                        <img src="images/1720174518.png" alt="">
+                      </div>
+                      <strong>파이리 스틱바 오렌지&라즈베리</strong>
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#">
+                      <div class="img_wrap">
+                        <img src="images/1720173998.png" alt="">
+                      </div>
+                      <strong>맥심 스틱바 모카골드 마일드</strong>
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#">
+                      <div class="img_wrap">
+                        <img src="images/1714823282.png" alt="">
+                      </div>
+                      <strong>고라파덕 아이스크림 콘</strong>
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#">
+                      <div class="img_wrap">
+                        <img src="images/1714823655.png" alt="">
+                      </div>
+                      <strong>푸린 아이스크림 콘</strong>
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#">
+                      <div class="img_wrap">
+                        <img src="images/1680427780.png" alt="">
+                      </div>
+                      <strong>소금우유 아이스 모찌</strong>
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#">
+                      <div class="img_wrap">
+                        <img src="images/1656849110.png" alt="">
+                      </div>
+                      <strong>아이스 모찌 바나나킥</strong>
+                    </a>
+                  </div>
+                </div>
+                <div class="swiper-button-prev btn_arrow"><i class="xi-angle-left-min"></i></div>
+                <div class="swiper-button-next btn_arrow"><i class="xi-angle-right-min"></i></div>
+              </div>
+            </div>
+          </div>
+          <div class="btn_menu_wrap">
+            <button class="btn btn_about" type="button">About Menu</button>
+            <button class="btn" type="button">All Menu</button>
+          </div>
+      </section>
+      <div class="main_banner">
+        <a href="#">
+          <img src="images/banner.jpg" alt="메인배너">
+        </a>
+      </div>
+      <section class="main_event_wrap">
+        <h2 class="main_tit">BR EVENT</h2>
+        <div class="event_slider_area">
+          <div class="event_slider_wrap">
+            <div class="swiper-container event_slider">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <a href="#">
+                    <img src="images/1720573096_0.jpg" alt="핑크스푼비긴즈 인스타그램이벤트">
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#">
+                    <img src="images/1657500724_0.jpg" alt="아이스 찹쌀떡 선물세트">
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#">
+                    <img src="images/1646985028_0.jpg" alt="로이텀 다이어리 세트">
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#">
+                    <img src="images/1641627297_0.jpg" alt="우주패스신규가입">
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#">
+                    <img src="images/1670146074_0.png" alt="기아멤버스">
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#">
+                    <img src="images/1667538956_0.png" alt="제휴혜택">
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#">
+                    <img src="images/1648962030_0.png" alt="T멤버쉽">
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#">
+                    <img src="images/1643869329_0.png" alt="KT멤버쉽">
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#">
+                    <img src="images/1667382917_0.png" alt="Mpoint">
+                  </a>
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+        </div>
+        <button class="btn" type="button">All Event</button>
+      </section>
+      <section class="main_order_wrap">
+        <h2 class="main_tit">BR ORDER</h2>
+        <div class="img_wrap">
+          <a class="store" href="#">
+            <img src="images/img_store.jpg" alt="store">
+          </a>
+          <a class="delivery" href="#">
+            <img src="images/img_happyorder_delivery.jpg" alt="delivery">
+          </a>
+        </div>
+      </section>
+    </div>
+    <footer id="footer">
+      <div class="policy_wrap">
+          <ul class="policy">
+            <li><a class="txt_point01" href="#">개인정보처리방침</a></li>
+            <li><a href="#">이용약관</a></li>
+            <li><a href="#">점포개설문의</a></li>
+            <li><a href="#">채용문의</a></li>
+          </ul>
+      </div>
+      <h2 class="footer_logo">
+        <a href="#">
+          <img src="images/full_logo.png" alt="배스킨라빈스">
+        </a>
+      </h2>
+      <div class="info">
+        <p>
+          서울특별시 서초구 남부순환로 2620(양재동 11-149번지)<br>
+          비알코리아(주) 대표이사 도세호<br>
+          개인정보관리책임자 : 김경우<br>
+          사업자 등록번호 : 303-81-09535<br>
+          TEL : 080-555-3131
+        </p>
+        <p class="copy">
+          Copyright ⓒ 2016 BRKOREA Coh3y. All Rights Reserved.
+        </p>
+      </div>
+      <div class="familysite_wrap">
+        <button type="button">FAMILY SITE</button>
+        <ul class="familysite">
+          <li><a href="http://www.baskinschool.co.kr/" target="_blank">배스킨 스쿨</a></li>
+          <li><a href="http://www.spc.co.kr/" target="_blank">SPC그룹사이트</a></li>
+          <li><a href="http://www.spcmagazine.com/" target="_blank">SPC MAGAZINE</a></li>
+          <li><a href="http://www.brkorea.co.kr/" target="_blank">BR코리아</a></li>
+          <li><a href="http://www.happypointcard.com" target="_blank">해피포인트카드</a></li>
+          <li><a href="http://www.caffe-pascucci.co.kr/" target="_blank">파스쿠찌</a></li>
+          <li><a href="http://www.spcsamlip.co.kr/" target="_blank">삼립</a></li>
+          <li><a href="http://www.paris.co.kr/" target="_blank">파리바게트</a></li>
+          <li><a href="http://www.dunkindonuts.co.kr/" target="_blank">던킨도너츠</a></li>
+        </ul>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
