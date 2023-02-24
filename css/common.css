@@ -3,28 +3,28 @@
     font-family: 'Pretendard';
     font-style: normal;
     font-weight: 400;
-    src: url(../fonts/pretendard/Pretendard-Regular.eot);
-    src: url(../fonts/pretendard/Pretendard-Regular.eot?#iefix) format('embedded-opentype'),
-         url(../fonts/pretendard/Pretendard-Regular.woff) format('woff'),
-         url(../fonts/pretendard/Pretendard-Regular.ttf) format('truetype');
+    src: url(../fonts/Pretendard-Regular.eot);
+    src: url(../fonts/Pretendard-Regular.eot?#iefix) format('embedded-opentype'),
+         url(../fonts/Pretendard-Regular.woff) format('woff'),
+         url(../fonts/Pretendard-Regular.ttf) format('truetype');
 }
 @font-face {
     font-family: 'Pretendard';
     font-style: normal;
     font-weight: 500;
-    src: url(../fonts/pretendard/Pretendard-Medium.eot);
-    src: url(../fonts/pretendard/Pretendard-Medium.eot?#iefix) format('embedded-opentype'),
-         url(../fonts/pretendard/Pretendard-Medium.woff) format('woff'),
-         url(../fonts/pretendard/Pretendard-Medium.ttf) format('truetype');
+    src: url(../fonts/Pretendard-Medium.eot);
+    src: url(../fonts/Pretendard-Medium.eot?#iefix) format('embedded-opentype'),
+         url(../fonts/Pretendard-Medium.woff) format('woff'),
+         url(../fonts/Pretendard-Medium.ttf) format('truetype');
 }
 @font-face {
     font-family: 'Pretendard';
     font-style: normal;
     font-weight: 600;
-    src: url(../fonts/pretendard/Pretendard-SemiBold.eot);
-    src: url(../fonts/pretendard/Pretendard-SemiBold.eot?#iefix) format('embedded-opentype'),
-         url(../fonts/pretendard/Pretendard-SemiBold.woff) format('woff'),
-         url(../fonts/pretendard/Pretendard-SemiBold.ttf) format('truetype');
+    src: url(../fonts/Pretendard-SemiBold.eot);
+    src: url(../fonts/Pretendard-SemiBold.eot?#iefix) format('embedded-opentype'),
+         url(../fonts/Pretendard-SemiBold.woff) format('woff'),
+         url(../fonts/Pretendard-SemiBold.ttf) format('truetype');
 }
 
 /* css변수
